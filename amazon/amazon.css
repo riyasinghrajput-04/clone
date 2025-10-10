@@ -292,55 +292,64 @@ margin-bottom: 25px;
   padding-top: 5px;
  }
 
+/* Mobile Responsiveness */
 @media only screen and (max-width: 768px) {
     
+    /* --- GENERAL --- */
     body {
-        font-size: 0.9rem;
+        font-size: 0.85rem;
     }
 
     /* --- NAVBAR --- */
     .navbar {
         flex-wrap: wrap;
-        height: auto;
-        justify-content: space-around;
-        padding: 5px;
+        justify-content: center;
+        padding: 10px 5px;
     }
 
     .nav_logo {
         height: 40px;
         width: 90px;
+        margin-bottom: 5px;
     }
 
+    /* --- SEARCH BAR --- */
     .nav_search {
         width: 90%;
+        max-width: 500px;
         height: 35px;
-        margin-top: 8px;
+        display: flex;
+        align-items: center;
+        margin-bottom: 10px;
+        border-radius: 4px;
     }
 
     .search_select {
-        width: 45px;
-        font-size: 0.7rem;
+        width: 50px;
+        font-size: 0.75rem;
     }
 
     .search_input {
-        width: 100%;
-        font-size: 0.85rem;
+        width: calc(100% - 90px); /* search bar minus select & icon */
+        font-size: 0.8rem;
     }
 
     .search_icon {
-        width: 35px;
+        width: 40px;
     }
-    
+
+    /* --- PANEL --- */
     .panel {
         flex-wrap: wrap;
-        height: auto;
-        font-size: 0.75rem;
-        padding: 5px;
+        justify-content: center;
         text-align: center;
+        font-size: 0.75rem;
+        padding: 5px 0;
     }
 
     .panel_opts {
         width: 100%;
+        margin-bottom: 5px;
     }
 
     /* --- HERO SECTION --- */
@@ -357,27 +366,57 @@ margin-bottom: 25px;
         margin-bottom: 15px;
     }
 
-    /* --- SHOPPING SECTION --- */
-    .shop_section {
+    /* --- SHOPPING SECTIONS --- */
+    .shop_section, .shop_section2 {
+        display: flex;
+        flex-wrap: wrap;
         justify-content: center;
+        gap: 10px; /* proper spacing between boxes */
         padding: 10px 0;
     }
 
     .box, .box2 {
-        width: 45%;  /* 2 per row */
-        height: 350px;
-        margin: 10px 5px;
+        width: 48%; /* 2 per row */
+        height: auto;
+        min-height: 350px;
+        background-color: white;
+        margin-bottom: 10px;
+        padding: 15px 0;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
     }
 
     .box_image1, .box_image2, .box_image3, .box_image4,
     .box2_image1, .box2_image2, .box2_image3, .box2_image4 {
+        width: 90%;
         height: 250px;
         background-size: cover;
-        margin: 8px;
+        margin-bottom: 10px;
     }
 
     .box p, .box2 p {
         font-size: 0.8rem;
+        text-align: center;
+    }
+
+    /* --- FOOTER --- */
+    .foot_panel2 {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        gap: 15px;
+        padding: 15px 0;
+    }
+
+    ul {
+        width: 80%;
+        margin: 10px 0;
+    }
+
+    ul a {
+        font-size: 0.8rem;
+        text-align: center;
     }
 
     .foot_panel1 {
@@ -385,28 +424,17 @@ margin-bottom: 25px;
         height: 45px;
     }
 
-    .foot_panel2 {
-        flex-wrap: wrap;
-        height: auto;
-        text-align: center;
-    }
-
-    ul {
-        width: 45%;
-        margin: 10px 0;
-    }
-
-    ul a {
-        font-size: 0.8rem;
-    }
-
     .foot_panel3 {
-        height: 60px;
+        height: auto;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
     }
 
     .logo1 {
         height: 40px;
         width: 120px;
+        margin-bottom: 5px;
     }
 
     .foot_panel4 {
@@ -415,3 +443,4 @@ margin-bottom: 25px;
         padding-bottom: 10px;
     }
 }
+

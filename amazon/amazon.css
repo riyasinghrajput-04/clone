@@ -291,3 +291,127 @@ margin-bottom: 25px;
   text-align: center;
   padding-top: 5px;
  }
+
+@media only screen and (max-width: 768px) {
+    
+    body {
+        font-size: 0.9rem;
+    }
+
+    /* --- NAVBAR --- */
+    .navbar {
+        flex-wrap: wrap;
+        height: auto;
+        justify-content: space-around;
+        padding: 5px;
+    }
+
+    .nav_logo {
+        height: 40px;
+        width: 90px;
+    }
+
+    .nav_search {
+        width: 90%;
+        height: 35px;
+        margin-top: 8px;
+    }
+
+    .search_select {
+        width: 45px;
+        font-size: 0.7rem;
+    }
+
+    .search_input {
+        width: 100%;
+        font-size: 0.85rem;
+    }
+
+    .search_icon {
+        width: 35px;
+    }
+    
+    .panel {
+        flex-wrap: wrap;
+        height: auto;
+        font-size: 0.75rem;
+        padding: 5px;
+        text-align: center;
+    }
+
+    .panel_opts {
+        width: 100%;
+    }
+
+    /* --- HERO SECTION --- */
+    .hero_section {
+        height: 250px;
+        background-position: center;
+        background-size: cover;
+    }
+
+    .hero_msg {
+        width: 95%;
+        font-size: 0.75rem;
+        height: 35px;
+        margin-bottom: 15px;
+    }
+
+    /* --- SHOPPING SECTION --- */
+    .shop_section {
+        justify-content: center;
+        padding: 10px 0;
+    }
+
+    .box, .box2 {
+        width: 45%;  /* 2 per row */
+        height: 350px;
+        margin: 10px 5px;
+    }
+
+    .box_image1, .box_image2, .box_image3, .box_image4,
+    .box2_image1, .box2_image2, .box2_image3, .box2_image4 {
+        height: 250px;
+        background-size: cover;
+        margin: 8px;
+    }
+
+    .box p, .box2 p {
+        font-size: 0.8rem;
+    }
+
+    .foot_panel1 {
+        font-size: 0.7rem;
+        height: 45px;
+    }
+
+    .foot_panel2 {
+        flex-wrap: wrap;
+        height: auto;
+        text-align: center;
+    }
+
+    ul {
+        width: 45%;
+        margin: 10px 0;
+    }
+
+    ul a {
+        font-size: 0.8rem;
+    }
+
+    .foot_panel3 {
+        height: 60px;
+    }
+
+    .logo1 {
+        height: 40px;
+        width: 120px;
+    }
+
+    .foot_panel4 {
+        font-size: 0.7rem;
+        height: auto;
+        padding-bottom: 10px;
+    }
+}

@@ -292,9 +292,8 @@ margin-bottom: 25px;
   padding-top: 5px;
  }
 
-/* Mobile Responsiveness */
 @media only screen and (max-width: 768px) {
-    
+
     /* --- GENERAL --- */
     body {
         font-size: 0.85rem;
@@ -305,46 +304,48 @@ margin-bottom: 25px;
         flex-wrap: wrap;
         justify-content: center;
         padding: 10px 5px;
+        text-align: center;
     }
 
     .nav_logo {
-        height: 40px;
-        width: 90px;
+        height: 35px;
+        width: 80px;
         margin-bottom: 5px;
     }
 
     /* --- SEARCH BAR --- */
     .nav_search {
         width: 90%;
-        max-width: 500px;
+        max-width: 400px;
         height: 35px;
         display: flex;
         align-items: center;
-        margin-bottom: 10px;
+        margin: 5px auto 10px auto;
         border-radius: 4px;
     }
 
     .search_select {
-        width: 50px;
-        font-size: 0.75rem;
+        width: 45px;
+        font-size: 0.7rem;
     }
 
     .search_input {
-        width: calc(100% - 90px); /* search bar minus select & icon */
+        width: calc(100% - 90px);
         font-size: 0.8rem;
+        padding: 3px 5px;
     }
 
     .search_icon {
-        width: 40px;
+        width: 35px;
     }
 
     /* --- PANEL --- */
     .panel {
         flex-wrap: wrap;
         justify-content: center;
-        text-align: center;
         font-size: 0.75rem;
         padding: 5px 0;
+        text-align: center;
     }
 
     .panel_opts {
@@ -354,34 +355,34 @@ margin-bottom: 25px;
 
     /* --- HERO SECTION --- */
     .hero_section {
-        height: 250px;
+        height: 200px;
         background-position: center;
         background-size: cover;
     }
 
     .hero_msg {
         width: 95%;
-        font-size: 0.75rem;
-        height: 35px;
-        margin-bottom: 15px;
+        font-size: 0.7rem;
+        height: 30px;
+        margin-bottom: 10px;
     }
 
-    /* --- SHOPPING SECTIONS --- */
+    /* --- SHOP SECTIONS --- */
     .shop_section, .shop_section2 {
         display: flex;
         flex-wrap: wrap;
         justify-content: center;
-        gap: 10px; /* proper spacing between boxes */
+        gap: 8px; /* space between boxes */
         padding: 10px 0;
     }
 
     .box, .box2 {
         width: 48%; /* 2 per row */
-        height: auto;
-        min-height: 350px;
+        min-height: 300px;
+        max-height: 350px;
         background-color: white;
         margin-bottom: 10px;
-        padding: 15px 0;
+        padding: 10px 0;
         display: flex;
         flex-direction: column;
         align-items: center;
@@ -390,38 +391,39 @@ margin-bottom: 25px;
     .box_image1, .box_image2, .box_image3, .box_image4,
     .box2_image1, .box2_image2, .box2_image3, .box2_image4 {
         width: 90%;
-        height: 250px;
+        height: 200px;
         background-size: cover;
-        margin-bottom: 10px;
+        margin-bottom: 8px;
     }
 
     .box p, .box2 p {
-        font-size: 0.8rem;
+        font-size: 0.75rem;
         text-align: center;
+        padding: 0 5px;
     }
 
     /* --- FOOTER --- */
+    .foot_panel1 {
+        font-size: 0.65rem;
+        height: 40px;
+    }
+
     .foot_panel2 {
         flex-direction: column;
         align-items: center;
         text-align: center;
-        gap: 15px;
+        gap: 12px;
         padding: 15px 0;
     }
 
     ul {
-        width: 80%;
-        margin: 10px 0;
+        width: 90%;
+        margin: 5px 0;
     }
 
     ul a {
-        font-size: 0.8rem;
+        font-size: 0.75rem;
         text-align: center;
-    }
-
-    .foot_panel1 {
-        font-size: 0.7rem;
-        height: 45px;
     }
 
     .foot_panel3 {
@@ -429,16 +431,17 @@ margin-bottom: 25px;
         flex-direction: column;
         justify-content: center;
         align-items: center;
+        padding: 5px 0;
     }
 
     .logo1 {
-        height: 40px;
-        width: 120px;
+        height: 35px;
+        width: 110px;
         margin-bottom: 5px;
     }
 
     .foot_panel4 {
-        font-size: 0.7rem;
+        font-size: 0.65rem;
         height: auto;
         padding-bottom: 10px;
     }
